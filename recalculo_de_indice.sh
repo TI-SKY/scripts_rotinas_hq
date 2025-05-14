@@ -2,12 +2,13 @@
 
 export CONF="./bancos.txt"
 export SQL="./recalculo.sql"
+export LOG_DIR="/sky/logs/"
 export FBUSER="SYSDBA"
 export FBPASS="skycl0ud"
 export SERVER="localhost/3050"
 
 logMsg () {
-        echo -e "$(date): $1" >> $LOG_DIR'incremental.log'
+        echo -e "$(date): $1" >> $LOG_DIR'recalculo_de_indice.log'
         echo "$1"
 }
 
