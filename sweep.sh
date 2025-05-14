@@ -1,12 +1,13 @@
 #!/bin/bash
 
 export CONF="./bancos.txt"
+export LOGDIR="/sky/logs/"
 export FBUSER="SYSDBA"
 export FBPASS="skycl0ud"
 export SERVER="localhost/3050"
 
 logMsg () {
-        echo -e "$(date): $1" >> $LOG_DIR'incremental.log'
+        echo -e "$(date): $1" >> $LOG_DIR'sweep.log'
         echo "$1"
 }
 
