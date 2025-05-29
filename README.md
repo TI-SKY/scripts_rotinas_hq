@@ -34,12 +34,12 @@ Salvar o arquivo
 Adicionar os scripts na crontab
 
 ```shell
-0 7 * * 0              root  /sky/scripts/script_rotinas_hq/incremental.sh 0 2
-0 4 * * 1-5            root  /sky/scripts/script_rotinas_hq/incremental.sh 1 2
-0-59/30 08-18 * * 1-5  root  /sky/scripts/script_rotinas_hq/incremental.sh 2 21
+0 7 * * 0              root  /sky/scripts/scripts_rotinas_hq/incremental.sh 0 2
+0 4 * * 1-5            root  /sky/scripts/scripts_rotinas_hq/incremental.sh 1 2
+0-59/30 08-18 * * 1-5  root  /sky/scripts/scripts_rotinas_hq/incremental.sh 2 21
 
-30 0 * * *             root  /sky/scripts/script_rotinas_hq/sweep.sh
-40 0 * * *             root  /sky/scripts/script_rotinas_hq/recalculo_de_indice.sh
+30 0 * * *             root  /sky/scripts/scripts_rotinas_hq/sweep.sh
+40 0 * * *             root  /sky/scripts/scripts_rotinas_hq/recalculo_de_indice.sh
 ```
 
 # Adicionar novos bancos
